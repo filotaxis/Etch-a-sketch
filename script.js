@@ -6,21 +6,14 @@ function changeColor() {
 
 
 function createGrid(size) {
-    for (let j = 0; j < size; j++){
-        const divRow = document.createElement("div");
-        divRow.classList.add("row");
-        2
-        for (let i = 0; i < size; i++){
-            const divElem = document.createElement("div");
-            divElem.classList.add("element");
-            divElem.addEventListener("mouseover", changeColor);
-            divRow.appendChild(divElem);
-        }
-        
-        gridContainer.appendChild(divRow);
+    for (let i = 0; i < size; i++){
+        const divElem = document.createElement("div");
+        divElem.classList.add("element");
+        divElem.addEventListener("mouseover", changeColor);
+        gridContainer.appendChild(divElem);
     }
-    
 }
+    
 
-createGrid(16);
+createGrid(64);
 
