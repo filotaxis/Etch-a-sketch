@@ -1,0 +1,27 @@
+.grid-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+    width: 540px;
+    height: 540px;
+    margin: 0 auto;
+}
+
+div>div{
+        background-color: lightyellow;
+}
+
+.row{
+     display: flex;
+    width: 100%;
+}
+
+.element{
+    border: 1px solid rgb(120, 120, 120);
+    flex: 1;
+    width: 35px;
+    height: 35px;
+}
+
