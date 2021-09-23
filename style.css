@@ -1,3 +1,8 @@
+html{
+    background-color: #84a59d;
+    font-family: 'Nunito', sans-serif;
+}
+
 .container{
     display: flex;
     justify-content: center;
@@ -5,28 +10,33 @@
 }
 
 .outer-container {
-    /* box-sizing: border-box; */
-    background-color: #e64453;
+    background-color: #f6bd60;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem;
     padding-bottom: 25rem;
-    border-radius: 20px;
+    border-radius: 15px;
 }
-.middle-container{
-    /* box-sizing: border-box; */
+.screen{
     background-color: #35393c;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem 4rem;
-    margin: 0;
     border-radius: 15px;
 }
 
+.middle-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 3rem 3rem 0 0.8rem;
+}
+
 .grid-container {
-    /* box-sizing: border-box; */
     display: flex;
     flex-wrap: wrap;
     width: 320px;
@@ -40,10 +50,56 @@
     box-sizing: border-box;
     border: 1px solid rgb(180, 180, 180);
     background-color: #e9d8a6;
-    width: calc(100%/8);
-    height: calc(100%/8);
-    /* flex: 1, 1, auto; */
+    width: calc(100%/16);
+    height: calc(100%/16);
     margin: 0;
+}
+
+/* buttons part */
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    /* background-color: coral; */
+}
+
+.buttons-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+    /* padding: 0 100%; */
+    /* background-color:  cornflowerblue; */
+
+}
+.btns{
+    display: flex;
+    gap: 1rem;
+}
+.btn>div{
+    background-color: #35393c;
+    padding: 1.5rem;
+    border-radius: 50%;
+}
+.btn>p{
+    margin: 0;
+    color: #99582a;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.buttons-bottom{
+    flex: 1;
+}
+
+/* style of litle details like the red led or the buttons of the gb */
+
+.power-on{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .red-led{
@@ -54,4 +110,33 @@
 }
 .power-on>p{
     color: white;
+    font-size: 0.8rem;
+}
+
+.middle-bottom>p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+p>span{
+    font-weight: 900;
+    font-style: italic;
+}
+
+p>span:nth-child(1){
+    color:#e21366;   
+}
+
+p>span:nth-child(2) {
+    color: #ada7ff;
+}
+p>span:nth-child(3) {
+    color: #99c42d;
+}
+p>span:nth-child(4) {
+    color: #e6921d;
+}
+p>span:nth-child(5) {
+    color: #218380;
 }
