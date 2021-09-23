@@ -136,9 +136,17 @@ body {
 }
 
 .clear-all,
-.random-color {
+.grid-res {
+
     background-color: #35393c;
+    border: none;
     padding: 0.5rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
     border-radius: 40%;
 }
 
