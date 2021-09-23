@@ -1,5 +1,9 @@
 const gridContainer = document.querySelector(".grid-container");
 
+const buttonA = document.querySelector(".a");
+
+
+
 function changeColor() {
     this.style["background-color"] = "gray";
 }

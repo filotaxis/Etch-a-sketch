@@ -1,12 +1,18 @@
-html{
+html,
+body {
     background-color: #84a59d;
     font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.container{
+
+.container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    height: 100vh;
 }
 
 .outer-container {
@@ -18,8 +24,10 @@ html{
     padding: 2rem;
     padding-bottom: 3rem;
     border-radius: 15px;
+    margin: auto 0;
 }
-.screen{
+
+.screen {
     background-color: #35393c;
     display: flex;
     flex-direction: column;
@@ -28,7 +36,7 @@ html{
     border-radius: 15px;
 }
 
-.middle-top{
+.middle-top {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -46,7 +54,7 @@ html{
     flex: 1;
 }
 
-.element{
+.element {
     box-sizing: border-box;
     border: 1px solid rgb(180, 180, 180);
     background-color: #e9d8a6;
@@ -57,42 +65,60 @@ html{
 
 /* buttons part */
 
-.buttons{
+.buttons {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.buttons-top{
+.buttons-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.btns{
+.btns {
     display: flex;
     gap: 1rem;
     margin: 2rem;
 }
 
-.btn:nth-child(1){
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn:nth-child(1) {
     margin: 2rem 0 0 0;
 }
 
-.btn>div{
-    background-color: #35393c;
-    padding: 2rem;
-    border-radius: 50%;
+.btn>button{
+   background-color: #35393c;
+   border: none;
+   color: white;
+   padding: 2rem;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 50%;
 }
 
-.btn>p, .buttons-bottom>div>p{
+
+
+.btn>p,
+.buttons-bottom>div>p {
     margin: 0;
     color: #99582a;
     font-size: 1.2rem;
     font-weight: 700;
     text-align: center;
 }
-.cross{
+
+.cross {
     font-size: 15rem;
     color: #35393c;
     font-weight: bold;
@@ -101,7 +127,7 @@ html{
     margin: 0 0 0 1rem;
 }
 
-.buttons-bottom{
+.buttons-bottom {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,7 +135,8 @@ html{
     margin-top: 3rem;
 }
 
-.clear-all, .random-color{
+.clear-all,
+.random-color {
     background-color: #35393c;
     padding: 0.5rem 2rem;
     border-radius: 40%;
@@ -117,48 +144,71 @@ html{
 
 /* style of litle details like the red led or the buttons of the gb */
 
-.power-on{
+.power-on {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.red-led{
+.red-led {
     background-color: red;
     width: 15px;
     height: 15px;
     border-radius: 50%;
 }
-.power-on>p{
+
+.power-on>p {
     color: white;
     font-size: 0.8rem;
 }
 
-.middle-bottom>p{
+.middle-bottom>p {
     color: white;
     font-size: 1.2rem;
     font-weight: 700;
 }
 
-p>span{
+p>span {
     font-weight: 900;
     font-style: italic;
 }
 
-p>span:nth-child(1){
-    color:#e21366;   
+p>span:nth-child(1) {
+    color: #e21366;
 }
 
 p>span:nth-child(2) {
     color: #ada7ff;
 }
+
 p>span:nth-child(3) {
     color: #99c42d;
 }
+
 p>span:nth-child(4) {
     color: #e6921d;
 }
+
 p>span:nth-child(5) {
     color: #218380;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #495552;
+    font-size: 1.5rem;
+    color: blanchedalmond;
+}
+
+footer>p {
+    margin: 0.5rem;
+}
+
+footer>p>a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #ffcb79;
 }
