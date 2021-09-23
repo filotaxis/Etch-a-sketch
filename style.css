@@ -16,7 +16,7 @@ html{
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    padding-bottom: 25rem;
+    padding-bottom: 3rem;
     border-radius: 15px;
 }
 .screen{
@@ -60,37 +60,59 @@ html{
 .buttons{
     display: flex;
     flex-direction: column;
-    /* background-color: coral; */
+    width: 100%;
 }
 
 .buttons-top{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    flex: 1;
-    /* padding: 0 100%; */
-    /* background-color:  cornflowerblue; */
-
 }
+
 .btns{
     display: flex;
     gap: 1rem;
+    margin: 2rem;
 }
+
+.btn:nth-child(1){
+    margin: 2rem 0 0 0;
+}
+
 .btn>div{
     background-color: #35393c;
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 50%;
 }
-.btn>p{
+
+.btn>p, .buttons-bottom>div>p{
     margin: 0;
     color: #99582a;
     font-size: 1.2rem;
     font-weight: 700;
+    text-align: center;
+}
+.cross{
+    font-size: 15rem;
+    color: #35393c;
+    font-weight: bold;
+    font-family: helvetica, arial;
+    line-height: 1;
+    margin: 0 0 0 1rem;
 }
 
 .buttons-bottom{
-    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.clear-all, .random-color{
+    background-color: #35393c;
+    padding: 0.5rem 2rem;
+    border-radius: 40%;
 }
 
 /* style of litle details like the red led or the buttons of the gb */
